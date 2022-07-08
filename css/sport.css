@@ -1,0 +1,196 @@
+/*startglobal rules*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #2196f3;
+    --main-transition: 1s;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: opx;
+    padding:0px;
+}
+p{
+    direction: rtl;
+}
+h2{
+    direction: rtl;
+    font-size: 20px;
+}
+/*end global rules*/
+
+/* start politic section */
+.sportPostsContent{
+    display: grid;
+    width: 1150px;
+    height: 460px;
+   
+    grid-template-areas:
+    'two two two five five five one one one one '
+    'two two two five five five one one one one'
+    'two two two five five five one one one one'
+    'two two two six six six one one one one  '
+    'three three three six six six one one one one  '
+    'three three three six six six one one one one  '
+    'three three three seven seven seven one one one one  '
+    'three three three seven seven seven one one one one  '
+    'four four four seven seven seven one one one one  '
+    'four four four eight eight eight one one one one  '
+    'four four four eight eight eight one one one one  '
+    'four four four eight eight eight one one one one  '
+    
+   ;
+    grid-gap: 10px;
+}
+/* the shared class for all elemnet*/
+.sportPostsContent .sportPost{
+    background-color: rgb(239 245 245);
+    
+}
+
+/* start Post1 with pig image and title */
+.sportPostsContent .sportPost1{
+    grid-area: one;
+    
+}
+.sportPostsContent .sportPost1 a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+}
+.sportPostsContent .sportPost1 a .sport1ImgContainer{
+    
+    height: 50%;
+    width: 100%;
+    
+}
+.sportPostsContent .sportPost1 a .sport1ImgContainer img{
+    height: 100%;
+    width: 100%;
+ 
+}
+.sportPostsContent .sportPost1 a .sport1TitleContainer{
+   display: flex;
+   flex-direction: column;
+    height: 50%;
+    width: 100%;
+    align-items: flex-end;
+    padding: 20px;
+}
+.sportPostsContent .sportPost1 a .sport1TitleContainer h2{
+    font-size: 22px;
+}
+.sportPostsContent .sportPost1 a .sport1TitleContainer p{
+
+}
+/* start Post1 with pig image and title */
+
+/* start Posts 2,3,4 with images and title but not big */
+.sportPostsContent .PostSmallImage a{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.sportPostsContent .PostSmallImage a .sport2ImgContainer{
+    height: 100%;
+    width: 50%;
+}
+.sportPostsContent .PostSmallImage a .sport2ImgContainer img{
+height: 100%;
+width: 100%;
+}
+.sportPostsContent .PostSmallImage a .sport2TitleContainer{
+height: 100%;
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: center;
+    padding: 0px 5px;
+}
+.sportPostsContent .PostSmallImage a .sport2TitleContainer h2{
+    font-size: 18px;
+}
+.sportPostsContent .sportPost2{
+    grid-area: two;
+}
+.sportPostsContent .sportPost3{
+    grid-area: three;
+}
+.sportPostsContent .sportPost4{
+    grid-area: four;
+}
+/* start Posts 2,3,4 with images but not big */
+
+/* start Posts 5,6,7, without images */
+.sportPostsContent .PostWithoutImage a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0px 5px;
+
+}
+.sportPostsContent .PostWithoutImage a .sport3TitleContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.sportPostsContent .PostWithoutImage a .sport3TitleContainer h2{
+    font-size: 18px;
+}
+.sportPostsContent .PostWithoutImage a .sport3TitleContainer i{
+
+}
+
+.sportPostsContent .sportPost5{
+    grid-area: five;
+}
+.sportPostsContent .sportPost6{
+    grid-area: six;
+}
+.sportPostsContent .sportPost7{
+    grid-area: seven;
+}
+.sportPostsContent .sportPost8{
+    grid-area: eight;
+}
+/* end Posts 5,6,7, without images */
+
+
+/* end politic section */
+
+
+
+/*
+--------------------
+here for links to right css 
+.sportPostsContent .sportPost1 a .sport1TitleContainer{
+   
+     align-items: flex-start;
+}
+.sportPostsContent .PostSmallImage a .sport2TitleContainer{
+
+align-items: flex-start;
+}
+*/

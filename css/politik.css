@@ -1,0 +1,246 @@
+/*startglobal rules*/
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root{
+    --main-color: #2196f3;
+    --main-transition: 1s;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin: 0px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+ul{
+    list-style: none;
+    margin: opx;
+    padding:0px;
+}
+p{
+    direction: rtl;
+}
+h2{
+    direction: rtl;
+    font-size: 20px;
+}
+/*end global rules*/
+
+/* start politic section */
+
+.CategoryContainer{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-items: center;
+}
+/* start Category title */
+.categoryTitleContainer{
+    width: 1150px;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+
+}
+.categoryTitleContainer .CategoryTitelBefor{
+    height: 30px;
+    width: 10px;
+    background-color: green;
+    margin: 0px 0px 0px 10px;
+    border-radius: 5px;
+}
+.categoryTitleContainer .catagoryTitle h2{
+    font-size: 28px;
+}
+.categoryTitleContainer .categoryHr{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+.categoryTitleContainer .categoryHr hr{
+    border: 9px solid green;
+    border-bottom: 0px;
+    border-radius: 5px;
+    height: 5px;
+    width: 200px;
+    text-align: center;
+}
+/* end Category title */
+
+/* start Category Posts */
+.politikPostsContent{
+    display: grid;
+    width: 1150px;
+    height: 460px;
+   
+    grid-template-areas:
+    'two two two one one one one five five five  '
+    'two two two one one one one five five five '
+    'two two two one one one one five five five '
+    'two two two one one one one six six six '
+    'three three three one one one one six six six '
+    'three three three one one one one six six six '
+    'three three three one one one one seven seven seven '
+    'three three three one one one one seven seven seven '
+    'four four four one one one one seven seven seven '
+    'four four four one one one one eight eight eight '
+    'four four four one one one one eight eight eight '
+    'four four four one one one one eight eight eight '
+    
+   ;
+    grid-gap: 10px;
+}
+/* the shared class for all elemnet*/
+.politikPostsContent .PolitikPost{
+    background-color: rgb(239 245 245);
+    
+}
+
+/* start Post1 with pig image and title */
+.politikPostsContent .PolitikPost1{
+    grid-area: one;
+    
+}
+.politikPostsContent .PolitikPost1 a{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    
+}
+.politikPostsContent .PolitikPost1 a .politik1ImgContainer{
+    
+    height: 50%;
+    width: 100%;
+    
+}
+.politikPostsContent .PolitikPost1 a .politik1ImgContainer img{
+    height: 100%;
+    width: 100%;
+ 
+}
+.politikPostsContent .PolitikPost1 a .politik1TitleContainer{
+   display: flex;
+   flex-direction: column;
+    height: 50%;
+    width: 100%;
+    align-items: flex-end;
+    padding: 20px;
+}
+.politikPostsContent .PolitikPost1 a .politik1TitleContainer h2{
+    font-size: 22px;
+}
+.politikPostsContent .PolitikPost1 a .politik1TitleContainer p{
+
+}
+/* start Post1 with pig image and title */
+
+/* start Posts 2,3,4 with images and title but not big */
+.politikPostsContent .PostSmallImage a{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+}
+.politikPostsContent .PostSmallImage a .politik2ImgContainer{
+    height: 100%;
+    width: 50%;
+}
+.politikPostsContent .PostSmallImage a .politik2ImgContainer img{
+height: 100%;
+width: 100%;
+}
+.politikPostsContent .PostSmallImage a .politik2TitleContainer{
+height: 100%;
+width: 50%;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+justify-content: center;
+    padding: 0px 5px;
+}
+.politikPostsContent .PostSmallImage a .politik2TitleContainer h2{
+    font-size: 18px;
+}
+.politikPostsContent .PolitikPost2{
+    grid-area: two;
+}
+.politikPostsContent .PolitikPost3{
+    grid-area: three;
+}
+.politikPostsContent .PolitikPost4{
+    grid-area: four;
+}
+/* start Posts 2,3,4 with images but not big */
+
+/* start Posts 5,6,7, without images */
+.politikPostsContent .PostWithoutImage a{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    padding: 0px 5px;
+
+}
+.politikPostsContent .PostWithoutImage a .politik3TitleContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+
+}
+.politikPostsContent .PostWithoutImage a .politik3TitleContainer h2{
+    font-size: 18px;
+}
+.politikPostsContent .PostWithoutImage a .politik3TitleContainer i{
+
+}
+
+.politikPostsContent .PolitikPost5{
+    grid-area: five;
+}
+.politikPostsContent .PolitikPost6{
+    grid-area: six;
+}
+.politikPostsContent .PolitikPost7{
+    grid-area: seven;
+}
+.politikPostsContent .PolitikPost8{
+    grid-area: eight;
+}
+/* end Posts 5,6,7, without images */
+
+
+/* end politic section */
+
+
+
+/*
+--------------------
+here for links to right css 
+.CategoryContainer{
+    align-items: flex-start;
+}
+.categoryTitleContainer{
+
+flex-direction: row;
+
+}
+.politikPostsContent .PolitikPost1 a .politik1TitleContainer{
+   
+     align-items: flex-start;
+}
+.politikPostsContent .PostSmallImage a .politik2TitleContainer{
+
+align-items: flex-start;
+}
+*/
