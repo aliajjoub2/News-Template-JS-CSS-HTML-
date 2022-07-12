@@ -1,0 +1,171 @@
+/* start algmein css*/
+*{
+    margin: 0px;
+    font-family: 'Newsreader', serif;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+/* end algemein css*/
+.CategoryContainer{
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    align-items: center;
+}
+/* start Category title */
+.categoryTitleContainer{
+    width: 1150px;
+display: flex;
+flex-direction: row-reverse;
+align-items: center;
+margin-bottom: 10px;
+
+}
+.categoryTitleContainer .CategoryTitelBefor{
+    height: 30px;
+    width: 10px;
+    background-color: green;
+    margin: 0px 0px 0px 10px;
+    border-radius: 5px;
+}
+.categoryTitleContainer .catagoryTitle h2{
+    font-size: 28px;
+}
+.categoryTitleContainer .categoryHr{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+}
+.categoryTitleContainer .categoryHr hr{
+    border: 9px solid green;
+    border-bottom: 0px;
+    border-radius: 5px;
+    height: 5px;
+    width: 200px;
+    text-align: center;
+}
+/* end Category title */
+
+
+/* start splide*/
+.CategoryContainer .splide{
+    height: 500px;
+    width: 1150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CategoryContainer .splide .splide__track{
+    height: 100%;
+    width: 100%;
+}
+.CategoryContainer .splide .splide__track .splide__list{
+    width: 190%;
+    height: 93%;
+}
+.CategoryContainer .splide .splide__track .splide__list .splide__slide{
+    
+    
+   
+    margin: 5px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+.CategoryContainer .splide .splide__track .splide__list .splide__slide img {
+   
+   height: 60%;
+   width: 100%;
+   margin-bottom: 20px;
+    
+}
+.CategoryContainer .splide .splide__track .splide__list .splide__slide a{
+
+}
+
+.CategoryContainer .splide .splide__track .splide__list .splide__slide h2{
+padding: 20px;
+bottom: 20px;
+right: 20px;
+
+}
+
+
+
+.splide__pagination__page:hover {
+    cursor: pointer;
+    opacity: .9;
+}
+.splide__pagination__page.is-active {
+    background: #ef0404;
+    transform: scale(1.4);
+    z-index: 1;
+}
+ .splide__slide.is-active:after {
+    background: #b4e900;
+    background: linear-gradient(0deg,#87de1d,#b4e900);
+}
+
+/* start and place size of link and right sympol*/
+.splide__arrow {
+    -ms-flex-align: center;
+    align-items: center;
+    background: #ccc;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: -ms-flexbox;
+    display: flex;
+    
+    -ms-flex-pack: center;
+    justify-content: center;
+    opacity: .7;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 3em;
+    height: 3em;
+    z-index: 1;
+}
+
+.splide__arrow--next {
+    right: 1em;
+    top: 375px;
+}
+.splide__arrow--prev {
+    left: 1em;
+    top: 375px;
+}
+
+.splide__arrow svg {
+    fill: #000;
+    height: 1.2em;
+    width: 1.2em;
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+
+/* start and place size of link and right sympol*/
+
+/* start the splide 2 , here i change just height of splide and place the next bottom*/
+#splide2{
+    height: 550px;
+}
+
+/* place the next and right*/
+#splide2 .splide__arrows--rtl .splide__arrow--next {
+    left: 78em;
+    right: auto;
+}
+
+/* end splide*/

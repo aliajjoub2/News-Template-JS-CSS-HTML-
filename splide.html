@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Splide</title>
+    <link rel="stylesheet" href="css/splide.min.css" />
+    <link rel="stylesheet" href="css/splide.css" />
+  </head>
+  <body>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var splide1 = new Splide("#splide1", {
+          type: "loop",
+          drag: "free",
+          heightRatio: 0.3,
+          start: 3,
+          perPage: 3,
+          perMove: 1,
+          direction: "rtl",
+          snap: true,
+          focus: "center",
+          autoScroll: {
+            speed: 0.3,
+          },
+        });
+        splide1.mount(window.splide.Extensions);
+
+        var splide2 = new Splide("#splide2", {
+          type: "loop",
+          drag: "free",
+          heightRatio: 0.3,
+          start: 3,
+          perPage: 5,
+          perMove: 1,
+          direction: "rtl",
+          snap: true,
+          focus: "center",
+          /*  autoScroll: {
+            speed: 0.3,
+          }, */
+        });
+        splide2.mount();
+      });
+    </script>
+
+    <!-- start CategoryContainer-->
+    <div class="CategoryContainer">
+      <!-- start categoryTitleContainer-->
+      <div class="categoryTitleContainer">
+        <div class="CategoryTitelBefor"></div>
+        <div class="catagoryTitle">
+          <h2>الصور</h2>
+        </div>
+        <div class="categoryHr">
+          <hr />
+        </div>
+      </div>
+      <!-- end categoryTitleContainer-->
+      <section
+        id="splide1"
+        class="splide"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/31947236/t/oq/v1/w480/r1.7778/-/s--1-.jpg"
+                alt="ali"
+              />
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/9148436/t/4o/v3/w960/r1.7778/-/tv-now-vorschau.jpg"
+                alt="ali"
+              />
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/31945308/t/Mu/v2/w960/r1.7778/-/alexandra-maria-lara-portraet.jpg"
+                alt="ali"
+              />
+
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/31945308/t/Mu/v2/w960/r1.7778/-/alexandra-maria-lara-portraet.jpg"
+                alt="ali"
+              />
+
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/31945308/t/Mu/v2/w960/r1.7778/-/alexandra-maria-lara-portraet.jpg"
+                alt="ali"
+              />
+
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/31945308/t/Mu/v2/w960/r1.7778/-/alexandra-maria-lara-portraet.jpg"
+                alt="ali"
+              />
+
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- end CategoryContainer-->
+
+    <!-- start CategoryContainer-->
+    <div class="CategoryContainer">
+      <!-- start categoryTitleContainer-->
+      <div class="categoryTitleContainer">
+        <div class="CategoryTitelBefor"></div>
+        <div class="catagoryTitle">
+          <h2>الفيديو</h2>
+        </div>
+        <div class="categoryHr">
+          <hr />
+        </div>
+      </div>
+      <!-- end categoryTitleContainer-->
+      <section
+        id="splide2"
+        class="splide"
+        aria-label="Splide Basic HTML Example"
+      >
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/31947236/t/oq/v1/w480/r1.7778/-/s--1-.jpg"
+                alt="ali"
+              />
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/9148436/t/4o/v3/w960/r1.7778/-/tv-now-vorschau.jpg"
+                alt="ali"
+              />
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/31945308/t/Mu/v2/w960/r1.7778/-/alexandra-maria-lara-portraet.jpg"
+                alt="ali"
+              />
+
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/31945308/t/Mu/v2/w960/r1.7778/-/alexandra-maria-lara-portraet.jpg"
+                alt="ali"
+              />
+
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/31945308/t/Mu/v2/w960/r1.7778/-/alexandra-maria-lara-portraet.jpg"
+                alt="ali"
+              />
+
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+            <li class="splide__slide">
+              <img
+                src="https://image.stern.de/31945308/t/Mu/v2/w960/r1.7778/-/alexandra-maria-lara-portraet.jpg"
+                alt="ali"
+              />
+
+              <a href="">
+                <h2>
+                  هنا العنوان التالي سيكون اسفل الصورة سأحاول تحديد كلمات محددة
+                </h2>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </div>
+    <!-- end CategoryContainer-->
+    <script src="js/splide.min.js"></script>
+    <script src="js/auto_scroll_splide.js"></script>
+  </body>
+</html>

@@ -261,26 +261,44 @@ transform: translate3d(0px, 0px, 0px) scale3d(1, 1, 1) rotateX(0deg) rotateY(0de
 transform-style: preserve-3d; */
 
 .splide{
-    height: 500px;
-    width: 50%;
+    height: 600px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.splide__track{
+    height: 100%;
+    width: 100%;
+}
 .splide__list{
-    
+    width: 190%;
+    height: 93%;
 }
 .splide__slide{
     
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     margin: 5px;
+    height: 100%;
+    width: 100%;
     
 }
 .splide__slide img {
-    vertical-align: bottom;
-    width: 250px;
+   
+   height: 60%;
+   width: 100%;
+   margin-bottom: 20px;
+    
+}
+.splide__slide a{
+    
+}
+.splide__slide h2{
+padding: 20px;
+bottom: 20px;
+left: 20px;
 }
 splide__slide img{
     height: 100px;
