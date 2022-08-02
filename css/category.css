@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  /* start page Body */
+  .pageBodyCategory {
+    direction: rtl;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+  }
+  /* start sideBarleft */
+  .pageBodyCategory .sideBarleft {
+    min-width: 250px;
+    height: 1000px;
+  }
+
+    /* start pageSection */
+  .pageBodyCategory .pageSection {
+    width: 600px;
+    height: 1000;
+  
+    display: flex;
+    flex-direction: column;
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100% ;
+    height: 200px;
+    padding: 10px 0px;
+    border-bottom: dotted 1px gray;
+
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer:hover{
+    border-bottom: solid 1px green;
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer  .postTitleContentDateContainer{
+    width: 65%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer  .postTitleContentDateContainer .categoryPostTitle{
+    margin-left: 10px;
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer  .postTitleContentDateContainer .categoryPostTitle h2{
+
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer  .postTitleContentDateContainer .categoryPostTitle h2:hover{
+    color: gray;
+}
+  .pageBodyCategory .pageSection .categoryPostContainer  .postTitleContentDateContainer .categoryPostContent{
+    margin-left: 10px;
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer  .postTitleContentDateContainer .categoryPostContent p{
+
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer  .postTitleContentDateContainer .categoryPostDate{
+
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer  .postTitleContentDateContainer .categoryPostDate i{
+
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer  .postImgContainer{
+    width: 35%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pageBodyCategory .pageSection .categoryPostContainer  .postImgContainer img{
+    width: 100%;
+    height: 80%;
+  }
+
+  .pageBodyCategory .pageSection .vategoryPaganation{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 20px;
+    
+
+  }
+  .pageBodyCategory .pageSection .vategoryPaganation a{
+    margin: 5px;
+    padding: 0px 10px;
+  }
+  .pageBodyCategory .pageSection .vategoryPaganation a:hover{
+    color: red;
+    background-color: rgb(218, 237, 254);
+  }
+
+  .pageBodyCategory .pageSection .vategoryPaganation .current{
+    background-color: #9cff9c;
+    padding: 0px 10px;
+    margin: 5px;
+    border-radius: 2px;
+  }
+
+  /* start sideBarRight */
+  .pageBodyCategory .sideBarRight {
+    min-width: 250px;
+    height: 1000px;
+  }

@@ -7,8 +7,6 @@
     <title>Splide</title>
     <link rel="stylesheet" href="css/splide.min.css" />
     <link rel="stylesheet" href="css/splide.css" />
-  </head>
-  <body>
     <script>
       document.addEventListener("DOMContentLoaded", function () {
         var splide1 = new Splide("#splide1", {
@@ -37,13 +35,16 @@
           direction: "rtl",
           snap: true,
           focus: "center",
-          /*  autoScroll: {
+            autoScroll: {
             speed: 0.3,
-          }, */
+          }, 
         });
-        splide2.mount();
+        splide2.mount(window.splide.Extensions);
       });
     </script>
+  </head>
+  <body>
+  
 
     <!-- start CategoryContainer-->
     <div class="CategoryContainer">
