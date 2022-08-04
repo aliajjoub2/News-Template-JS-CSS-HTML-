@@ -169,3 +169,19 @@ right: 20px;
 }
 
 /* end splide*/
+
+/* start media Query*/
+
+@media (max-width: 1150px) {
+    .CategoryContainer .splide{
+        height: 540px;
+        width: 100%;
+        
+    }
+    #splide2 .splide__arrows--rtl .splide__arrow--next {
+        left: 1em;
+        
+    }
+    
+}
+/* end media Query*/

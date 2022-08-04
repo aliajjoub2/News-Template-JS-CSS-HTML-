@@ -219,6 +219,36 @@ justify-content: center;
 }
 /* end Posts 5,6,7, without images */
 
+/*start media Query*/
+@media (max-width: 1025px) {
+    .politikPostsContent{
+        display: grid;
+        width: 100%;
+        height: auto;
+       
+        grid-template-areas:
+        'one one '
+        'one one '
+        'one one '
+        'one one '
+        'two two '
+        'two two '
+
+        'three three '
+        'four four '
+        'five five '
+        'six six '
+        'seven seven '
+        'eight eight '
+        ;
+        grid-gap: 10px;
+    }
+    .categoryTitleContainer {
+        width: 100%;
+        
+    }
+}
+/*start media Query*/
 
 /* end politic section */
 
